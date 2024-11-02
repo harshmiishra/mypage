@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+<style>
+    *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #a{
+            text-decoration: none;
+            font-size:x-large;
+            margin: 25px;
+            border-color: rgb(200, 226, 174);
+            background-color: #FAFAFA;
+            padding: 5px;
+            color: #e77917;
+            
+            }
+        #a:hover{
+            padding: 5px;
+            color: rgb(48, 112, 60);
+        }
+        .div1{
+            
+            display: flex;
+            justify-content: center;
+            background-color:#FAFAFA ;
+            height: 90px
+        }
+        #logo{
+            transform: translate(-40%,-29.7%);
+         height: 200px;}  
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7f4;
+            color: #333;
+            
+            
+            justify-content: center;
+        }
+        
+        /* Main container */
+        .contact-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #ccf2f0;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading style */
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #444;
+        }
+
+        /* Contact info section */
+        .contact-info {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Form styling */
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #eafaf8;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #444;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        /* Button styling */
+        .contact-form button {
+            background-color: #ff9f80;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff7043;
+        }
+        
+        .contact-form .reset-btn {
+            background-color: #cccccc;
+            color: #333;
+        }
+
+        .contact-form .reset-btn:hover {
+            background-color: #b3b3b3;
+        }
+            
+</style>
+</head>
+<body style="background-color: #c9fbee;">
+    <div class="div1">
+        <a href="Happylife.html">
+        <img src="happylife-high-resolution-logo-removebg-preview.png"   alt="Logo" id="logo" height="110px" ></a>
+        <a href="Happylife.html" id="a">Home</a>
+        <a href="our.doctors.html" id="a">Our Doctors</a>
+        <a href="appontment.html" id="a">Book Appointment</a>
+        <a href="about us.html" id="a">About us</a>
+        <a href="contact.html" id="a">Contact us</a>
+    </div>
+    <div class="contact-container" style="margin-top: 30px; margin-left: 350px;">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Location:</strong> Gorakhpur, Uttar Pradesh, India</p>
+            <p><strong>Call:</strong> +91 9000000011</p>
+            <p><strong>Email:</strong> <a href="mailto:happylif@gmail.com" style="color: #ff7043; text-decoration: none;">happylif@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.happylife.linkedin.com" style="color: #ff7043; text-decoration: none;">www.happylife.linkedin.com</a></p>
+            <p>You can contact us on our social media platforms.</p>
+        </div>
+        
+        <h3 style="text-align: center; color: #333;">You can fill up the form to send us your message</h3>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                <label for="issue-type">Issue type:</label>
+                <select id="issue-type" name="issue-type">
+                    <option value="booking">Booking issue</option>
+                    <option value="general">General inquiry</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+    
+                <label for="concern">Explain your concern here:</label>
+                <textarea id="concern" name="concern" placeholder="Describe your issue here" required></textarea>
+    
+                <button type="submit">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>    

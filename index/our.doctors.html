@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #a{
+            text-decoration: none;
+            font-size:x-large;
+            margin: 25px;
+            border-color: rgb(200, 226, 174);
+            background-color: #FAFAFA;
+            padding: 5px;
+            color: #e77917;
+            
+            }
+        #a:hover{
+            padding: 5px;
+            color: rgb(48, 112, 60);
+        }
+        .div1{
+            
+            display: flex;
+            justify-content: center;
+            background-color:#FAFAFA ;
+            height: 90px
+        }
+        #logo{
+            transform: translate(-40%,-29.7%);
+         height: 200px;  
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .doctors-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .doctors-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 0px;
+        }
+        .doctors-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .doctor-card {
+            background-color: #e0f7fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 0px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .doctor-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .doctor-card h3 {
+            color: #00796b;
+        }
+        .doctor-card p {
+            color: #555;
+        }
+        .doctor-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: auto;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .doctor-card button:hover {
+            background-color: #45a049;
+        }
+        @media(max-width: 768px) {
+            .doctor-card {
+                width: calc(50% - 40px);
+            }
+        }
+        @media(max-width: 480px) {
+            .doctor-card {
+                width: calc(100% - 40px);
+            }
+        }
+        
+    </style>
+</head>
+<body style="background-color: #c9fbee;">
+    <div id="div1">
+        
+        <div class="div1">
+            <a href="/Happylife.html">
+            <img src="happylife-high-resolution-logo-removebg-preview.png"   alt="Logo" id="logo" height="110px" ></a>
+            <a href="Happylife.html" id="a">Home</a>
+            <a href="/our.doctors.html" id="a">Our Doctors</a>
+            <a href="/appontment.html" id="a">Book Appointment</a>
+            <a href="/about us.html" id="a">About us</a>
+            <a href="contact.html" id="a">Contact us</a>
+        </div>
+        
+    </div
+    <div>
+        <div class="container">
+            <div class="doctors-section">
+                <h2>Our Doctors</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <img src="yogaaa - Copy.jpg" alt="Yoga Guru">
+                        <h3>Yoga Guru</h3>
+                        <p>Expert in Yoga</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="/ayurveda-baground_1003030-4115.avif" alt="Ayurveda Guru">
+                        <h3>Ayurveda Guru</h3>
+                        <p>Expert in Ayurveda</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="/male-doc-vector-500x500.png" alt="Dermatologist">
+                        <h3>Dermatologist</h3>
+                        <p>Skin Specialist</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="/nuro.jpg" alt="Neurologist">
+                        <h3>Neurologist</h3>
+                        <p>Nervous System Specialist</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="/drjhatka.jpg" alt="Psychiatric">
+                        <h3>Psychiatric</h3>
+                        <p>Mental Health Specialist</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="/doctor-cardiologist-wit.avif" alt="Cardiologist">
+                        <h3>Cardiologist</h3>
+                        <p>Heart Specialist</p>
+                        <button onclick="location.href='appontment.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

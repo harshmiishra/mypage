@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HappyLife</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            height: 100vh;
+            margin: 0;
+            padding: 0px;
+        }
+        #a{
+            text-decoration: none;
+            font-size:x-large;
+            margin: 25px;
+            border-color: rgb(200, 226, 174);
+            background-color: #FAFAFA;
+            padding: 5px;
+            color: #e77917;
+            
+            }
+        #a:hover{
+            padding: 5px;
+            color: rgb(48, 112, 60);
+        }
+        .div1{
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            background-color:#FAFAFA ;
+            height: 90px
+        }
+        #logo{
+            transform: translate(-40%,-29.7%);
+         height: 200px;
+        }
+        #frm{
+            margin-top: 20px;
+        }
+        .appointment-form {
+            background-color: #a7ffeb;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .appointment-form h1 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .appointment-form label {
+            color: #004d40;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .appointment-form input,
+        .appointment-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #004d40;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .appointment-form input[type="file"] {
+            padding: 6px;
+        }
+        .appointment-form input[type="radio"] {
+            margin-right: 5px;
+        }
+        .appointment-form .gender {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .appointment-form .gender div {
+            display: flex;
+            align-items: center;
+        }
+        .appointment-form .gender label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .appointment-form button {
+            width: 48%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .appointment-form .submit-btn {
+            background-color: #00796b;
+            color: white;
+        }
+        .appointment-form .submit-btn:hover {
+            background-color: #004d40;
+        }
+        .appointment-form .reset-btn {
+            background-color: #b2dfdb;
+            color: #004d40;
+        }
+        .appointment-form .reset-btn:hover {
+            background-color: #80cbc4;
+        }
+        .appointment-form .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <nav class="div1">
+        <a href="/Happylife.html">
+        <img src="happylife-high-resolution-logo-removebg-preview.png"   alt="Logo" id="logo" height="110px" ></a>
+        <a href="Happylife.html" id="a">Home</a>
+        <a href="/our.doctors.html" id="a">Our Doctors</a>
+        <a href="/appontment.html" id="a">Book Appointment</a>
+        <a href="/about us.html" id="a">About us</a>
+        <a href="contact.html" id="a">Contact us</a>
+    </nav>
+
+    <form class="appointment-form" id="frm">
+        <h1>Book your appointment now!</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="doctors">Select Doctor</label>
+        <select id="doctors" name="doctors">
+            <option>----Select the doctor----</option>
+            <option>Yoga Guru</option>
+            <option>Ayurveda Guru</option>
+            <option>Dermatologist</option>
+            <option>Neurologist</option>
+            <option>Psychiatrist</option>
+            <option>Cardiologist</option>
+        </select>
+        <label for="health-report">Upload previous health report</label>
+        <input type="file" id="health-report" name="health-report">
+
+        <label for="appointment-date">Appointment date</label>
+        <input type="date" id="appointment-date" name="appointment-date">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+
+        <div class="gender">
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
